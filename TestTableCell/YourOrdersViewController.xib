@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="YourOrdersViewController">
+            <connections>
+                <outlet property="statusLbl" destination="57E-gN-Aay" id="Y7y-Ll-25t"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="yourOrdersTableView" destination="EFe-eJ-pNT" id="92T-WV-IJK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="91" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="EFe-eJ-pNT">
+                    <rect key="frame" x="0.0" y="73" width="375" height="594"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="8y2-wj-p4c"/>
+                        <outlet property="delegate" destination="-1" id="dad-Wc-Wvw"/>
+                    </connections>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your orders" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mVP-hV-pes">
+                    <rect key="frame" x="16" y="25" width="343" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="ezN-oV-tGX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.99989169840000003" green="1" blue="0.99988096950000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No orders Found" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="57E-gN-Aay">
+                    <rect key="frame" x="22" y="296" width="331" height="149"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="149" id="OqY-AE-y7d"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.17120596769999999" green="0.202049017" blue="0.29331600670000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="57E-gN-Aay" secondAttribute="trailing" constant="22" id="87s-OZ-UbH"/>
+                <constraint firstItem="57E-gN-Aay" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="37" id="EVF-Re-eWm"/>
+                <constraint firstItem="mVP-hV-pes" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="25" id="IQ6-iH-mH9"/>
+                <constraint firstItem="EFe-eJ-pNT" firstAttribute="top" secondItem="mVP-hV-pes" secondAttribute="bottom" constant="16" id="PFh-Lp-pdQ"/>
+                <constraint firstAttribute="bottom" secondItem="EFe-eJ-pNT" secondAttribute="bottom" id="Ruz-5e-yke"/>
+                <constraint firstItem="EFe-eJ-pNT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="aLd-S6-GOd"/>
+                <constraint firstItem="57E-gN-Aay" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="agK-cb-1qo"/>
+                <constraint firstAttribute="trailing" secondItem="mVP-hV-pes" secondAttribute="trailing" constant="16" id="iFP-aP-whc"/>
+                <constraint firstItem="57E-gN-Aay" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="22" id="pQo-e6-8Hs"/>
+                <constraint firstItem="mVP-hV-pes" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="sdf-ca-gGG"/>
+                <constraint firstAttribute="trailing" secondItem="EFe-eJ-pNT" secondAttribute="trailing" id="zjS-Da-2UJ"/>
+            </constraints>
+            <point key="canvasLocation" x="-252" y="57"/>
+        </view>
+    </objects>
+</document>

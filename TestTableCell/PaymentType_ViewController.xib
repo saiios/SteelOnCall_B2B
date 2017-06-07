@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PaymentType_ViewController">
+            <connections>
+                <outlet property="cashOnDeliveryBtn" destination="phd-zE-rxY" id="35r-24-hHZ"/>
+                <outlet property="onlinePayBtn" destination="cRg-Yn-lqt" id="klx-dE-5ov"/>
+                <outlet property="payment_subview" destination="3xe-2c-FsK" id="sAj-2a-nZs"/>
+                <outlet property="sub_OflinePayBtn" destination="7V5-46-Q58" id="MbC-5B-crn"/>
+                <outlet property="sub_OnlinePayBtn" destination="ohn-rt-zSS" id="H4g-kA-fIc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wlg-4R-ovf">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MMz-Gg-rzI">
+                            <rect key="frame" x="7" y="20" width="79" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="79" id="LcP-St-chk"/>
+                                <constraint firstAttribute="height" constant="44" id="yP2-31-J9P"/>
+                            </constraints>
+                            <state key="normal" image="Back">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="backBtnActn:" destination="-1" eventType="touchUpInside" id="7Fk-Xn-l8X"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ol5-06-cSu">
+                            <rect key="frame" x="17" y="72" width="338" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="18" id="SAy-LF-64N"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="Qg4-ap-ulC">
+                            <rect key="frame" x="94" y="22" width="188" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="Qg4-ap-ulC" secondAttribute="height" multiplier="47:10" id="ogM-wt-bgN"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.17254901959999999" green="0.20392156859999999" blue="0.29411764709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="Ol5-06-cSu" firstAttribute="leading" secondItem="wlg-4R-ovf" secondAttribute="leading" constant="17" id="2eW-hZ-QAu"/>
+                        <constraint firstItem="Qg4-ap-ulC" firstAttribute="top" secondItem="wlg-4R-ovf" secondAttribute="top" constant="22" id="Yr4-11-UiY"/>
+                        <constraint firstItem="MMz-Gg-rzI" firstAttribute="leading" secondItem="wlg-4R-ovf" secondAttribute="leading" constant="7" id="aCi-WS-KKg"/>
+                        <constraint firstItem="Qg4-ap-ulC" firstAttribute="centerX" secondItem="wlg-4R-ovf" secondAttribute="centerX" id="c6b-Ch-TBF"/>
+                        <constraint firstAttribute="trailing" secondItem="Ol5-06-cSu" secondAttribute="trailing" constant="20" id="mXv-M1-o3y"/>
+                        <constraint firstItem="Ol5-06-cSu" firstAttribute="top" secondItem="Qg4-ap-ulC" secondAttribute="bottom" constant="10" id="st6-Vq-Caj"/>
+                        <constraint firstAttribute="height" constant="100" id="vLd-Ri-czb"/>
+                        <constraint firstItem="MMz-Gg-rzI" firstAttribute="top" secondItem="wlg-4R-ovf" secondAttribute="top" constant="20" id="y5r-ym-3Od"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i5q-r3-e6I">
+                    <rect key="frame" x="8" y="105" width="358" height="121"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cRg-Yn-lqt">
+                            <rect key="frame" x="15" y="15" width="45" height="45"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="cRg-Yn-lqt" secondAttribute="height" multiplier="1:1" id="8nP-Zi-y8h"/>
+                                <constraint firstAttribute="width" constant="45" id="Jfv-T9-H81"/>
+                                <constraint firstAttribute="height" constant="45" id="ytE-uI-iTC"/>
+                            </constraints>
+                            <state key="normal" image="Radio_Deselect"/>
+                            <connections>
+                                <action selector="onlinePayBtnAction:" destination="-1" eventType="touchUpInside" id="4li-g7-v6l"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Online Payment(Credit Card/Debit Card/Net Banking)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lol-Py-up7">
+                            <rect key="frame" x="68" y="16" width="290" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="nDa-Ia-b4J"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="phd-zE-rxY">
+                            <rect key="frame" x="15" y="60" width="44" height="45"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="phd-zE-rxY" secondAttribute="height" multiplier="44:45" id="jdp-1V-pc3"/>
+                            </constraints>
+                            <state key="normal" image="Radio_Deselect"/>
+                            <connections>
+                                <action selector="cashOnDelivryBtnAction:" destination="-1" eventType="touchUpInside" id="Wgi-hM-I8e"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="CashOn Delivery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2PQ-Rd-jCL">
+                            <rect key="frame" x="67" y="61" width="268" height="43"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="43" id="7Gd-22-yWg"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="2PQ-Rd-jCL" firstAttribute="leading" secondItem="phd-zE-rxY" secondAttribute="trailing" constant="8" id="2ay-5e-ZzZ"/>
+                        <constraint firstItem="lol-Py-up7" firstAttribute="top" secondItem="i5q-r3-e6I" secondAttribute="top" constant="16" id="H5t-1o-CZ5"/>
+                        <constraint firstAttribute="trailing" secondItem="2PQ-Rd-jCL" secondAttribute="trailing" constant="23" id="LBv-O8-MRF"/>
+                        <constraint firstItem="cRg-Yn-lqt" firstAttribute="top" secondItem="i5q-r3-e6I" secondAttribute="top" constant="15" id="LKI-Ql-sbq"/>
+                        <constraint firstAttribute="bottom" secondItem="phd-zE-rxY" secondAttribute="bottom" constant="16" id="MUM-Vu-v8b"/>
+                        <constraint firstItem="phd-zE-rxY" firstAttribute="leading" secondItem="i5q-r3-e6I" secondAttribute="leading" constant="15" id="UI4-ee-91G"/>
+                        <constraint firstAttribute="bottom" secondItem="2PQ-Rd-jCL" secondAttribute="bottom" constant="17" id="Wen-pm-iGQ"/>
+                        <constraint firstAttribute="height" constant="121" id="YiF-XH-w43"/>
+                        <constraint firstItem="lol-Py-up7" firstAttribute="leading" secondItem="cRg-Yn-lqt" secondAttribute="trailing" constant="8" id="aqI-RY-dM3"/>
+                        <constraint firstItem="phd-zE-rxY" firstAttribute="top" secondItem="cRg-Yn-lqt" secondAttribute="bottom" id="eMP-4p-RZp"/>
+                        <constraint firstItem="cRg-Yn-lqt" firstAttribute="leading" secondItem="i5q-r3-e6I" secondAttribute="leading" constant="15" id="ifl-ke-1q7"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3xe-2c-FsK">
+                    <rect key="frame" x="8" y="223" width="358" height="387"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ohn-rt-zSS">
+                            <rect key="frame" x="41" y="10" width="40" height="40"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="7Re-iL-GGd"/>
+                                <constraint firstAttribute="width" secondItem="ohn-rt-zSS" secondAttribute="height" multiplier="1:1" id="BUJ-VH-W23"/>
+                                <constraint firstAttribute="height" constant="40" id="WzQ-b2-miF"/>
+                            </constraints>
+                            <state key="normal" image="Radio_Deselect"/>
+                            <connections>
+                                <action selector="sub_OnlinePayBtnAction:" destination="-1" eventType="touchUpInside" id="uk6-ZQ-ath"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Online Payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjC-7c-1ff">
+                            <rect key="frame" x="93" y="9" width="257" height="43"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="43" id="jHs-cd-Rgf"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7V5-46-Q58">
+                            <rect key="frame" x="41" y="57" width="40" height="40"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" secondItem="7V5-46-Q58" secondAttribute="height" multiplier="1:1" id="WKB-M9-23u"/>
+                                <constraint firstAttribute="width" constant="40" id="kXV-tc-Pl7"/>
+                                <constraint firstAttribute="height" constant="40" id="uNw-eB-vdF"/>
+                            </constraints>
+                            <state key="normal" image="Radio_Deselect"/>
+                            <connections>
+                                <action selector="sub_offlinePayBtnAction:" destination="-1" eventType="touchUpInside" id="sdJ-Ms-ZVa"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Offline Payment" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vRz-xR-j7y">
+                            <rect key="frame" x="93" y="56" width="257" height="43"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="43" id="n8L-oy-9iT"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="&gt;&gt;Steeloncall collects the Shipping &amp; Handling charges before the delivery process start." textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGu-sC-flJ">
+                            <rect key="frame" x="8" y="99" width="350" height="63"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="63" id="zTd-R3-Nh1"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="&gt;&gt;please select Online payment to make payment for Shipping &amp; Handling charges Using NetBanking/Debit card/Credit card" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IY4-Qe-9mX">
+                            <rect key="frame" x="8" y="156" width="350" height="72"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="72" id="mVe-eY-qL8"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="&gt;&gt;please select Offline payment to make physical payment by Cash / Cheque / DD towords Shipping &amp; Handling charges" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="81P-zn-fMg">
+                            <rect key="frame" x="8" y="220" width="350" height="73"/>
+                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="73" id="1T0-Qy-HNm"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="ohn-rt-zSS" firstAttribute="leading" secondItem="3xe-2c-FsK" secondAttribute="leading" constant="41" id="2HI-iW-jCf"/>
+                        <constraint firstAttribute="trailing" secondItem="hjC-7c-1ff" secondAttribute="trailing" constant="8" id="63C-aW-7Zg"/>
+                        <constraint firstItem="IY4-Qe-9mX" firstAttribute="leading" secondItem="3xe-2c-FsK" secondAttribute="leading" constant="8" id="Cu4-od-Zw4"/>
+                        <constraint firstItem="81P-zn-fMg" firstAttribute="leading" secondItem="3xe-2c-FsK" secondAttribute="leading" constant="8" id="Qo1-Wf-86c"/>
+                        <constraint firstItem="7V5-46-Q58" firstAttribute="top" secondItem="ohn-rt-zSS" secondAttribute="bottom" constant="7" id="R8M-cb-Nsx"/>
+                        <constraint firstItem="7V5-46-Q58" firstAttribute="leading" secondItem="3xe-2c-FsK" secondAttribute="leading" constant="41" id="SC2-E6-3Xq"/>
+                        <constraint firstItem="MGu-sC-flJ" firstAttribute="top" secondItem="7V5-46-Q58" secondAttribute="bottom" constant="2" id="VhE-Wl-GgM"/>
+                        <constraint firstItem="MGu-sC-flJ" firstAttribute="leading" secondItem="3xe-2c-FsK" secondAttribute="leading" constant="8" id="YhY-d5-TRa"/>
+                        <constraint firstItem="ohn-rt-zSS" firstAttribute="top" secondItem="3xe-2c-FsK" secondAttribute="top" constant="10" id="ZO9-lc-MJv"/>
+                        <constraint firstItem="vRz-xR-j7y" firstAttribute="top" secondItem="hjC-7c-1ff" secondAttribute="bottom" constant="4" id="f5e-3Z-fm7"/>
+                        <constraint firstItem="81P-zn-fMg" firstAttribute="top" secondItem="IY4-Qe-9mX" secondAttribute="bottom" constant="-8" id="lAV-0f-zXV"/>
+                        <constraint firstItem="hjC-7c-1ff" firstAttribute="leading" secondItem="ohn-rt-zSS" secondAttribute="trailing" constant="12" id="lkH-tg-U3C"/>
+                        <constraint firstAttribute="trailing" secondItem="vRz-xR-j7y" secondAttribute="trailing" constant="8" id="qju-TI-NLX"/>
+                        <constraint firstItem="hjC-7c-1ff" firstAttribute="top" secondItem="3xe-2c-FsK" secondAttribute="top" constant="9" id="v2C-8V-xQW"/>
+                        <constraint firstItem="vRz-xR-j7y" firstAttribute="leading" secondItem="7V5-46-Q58" secondAttribute="trailing" constant="12" id="vwv-70-Tsh"/>
+                        <constraint firstItem="IY4-Qe-9mX" firstAttribute="top" secondItem="MGu-sC-flJ" secondAttribute="bottom" constant="-6" id="xy0-xX-2rl"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v7i-Lo-jig">
+                    <rect key="frame" x="0.0" y="609" width="375" height="58"/>
+                    <color key="backgroundColor" red="0.1647058824" green="0.18823529410000001" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="58" id="SFe-sF-aIo"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="17"/>
+                    <state key="normal" title="Make Payment">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="makePaymentBtnActn:" destination="-1" eventType="touchUpInside" id="B1h-Mu-o87"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.92549019607843142" green="0.93725490196078431" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="lol-Py-up7" secondAttribute="trailing" constant="9" id="0Ba-PN-1hS"/>
+                <constraint firstAttribute="trailing" secondItem="3xe-2c-FsK" secondAttribute="trailing" constant="9" id="4fj-F7-dva"/>
+                <constraint firstItem="v7i-Lo-jig" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Akv-l0-41E"/>
+                <constraint firstAttribute="trailing" secondItem="MGu-sC-flJ" secondAttribute="trailing" constant="9" id="SfV-s7-8xH"/>
+                <constraint firstItem="i5q-r3-e6I" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="Uou-Jf-4sW"/>
+                <constraint firstItem="wlg-4R-ovf" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="YCe-dr-5jp"/>
+                <constraint firstItem="3xe-2c-FsK" firstAttribute="top" secondItem="i5q-r3-e6I" secondAttribute="bottom" constant="-3" id="YHc-Xy-3gN"/>
+                <constraint firstAttribute="trailing" secondItem="81P-zn-fMg" secondAttribute="trailing" constant="9" id="YV7-kX-p5w"/>
+                <constraint firstItem="v7i-Lo-jig" firstAttribute="top" secondItem="3xe-2c-FsK" secondAttribute="bottom" constant="-1" id="chr-nw-v1x"/>
+                <constraint firstAttribute="bottom" secondItem="v7i-Lo-jig" secondAttribute="bottom" id="gtQ-dM-9bX"/>
+                <constraint firstItem="3xe-2c-FsK" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="hnQ-Oi-1zo"/>
+                <constraint firstAttribute="trailing" secondItem="i5q-r3-e6I" secondAttribute="trailing" constant="9" id="rOx-Bn-EDr"/>
+                <constraint firstItem="wlg-4R-ovf" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="rUp-FC-Xc9"/>
+                <constraint firstItem="i5q-r3-e6I" firstAttribute="top" secondItem="wlg-4R-ovf" secondAttribute="bottom" constant="5" id="ti4-oG-Opv"/>
+                <constraint firstAttribute="trailing" secondItem="IY4-Qe-9mX" secondAttribute="trailing" constant="9" id="yDQ-gd-t9W"/>
+                <constraint firstAttribute="trailing" secondItem="wlg-4R-ovf" secondAttribute="trailing" id="yrx-Qr-N9E"/>
+                <constraint firstAttribute="trailing" secondItem="v7i-Lo-jig" secondAttribute="trailing" id="zTT-xy-hcR"/>
+            </constraints>
+            <point key="canvasLocation" x="106.5" y="291.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Back" width="44" height="44"/>
+        <image name="Radio_Deselect" width="30" height="30"/>
+        <image name="logo" width="188" height="40"/>
+    </resources>
+</document>

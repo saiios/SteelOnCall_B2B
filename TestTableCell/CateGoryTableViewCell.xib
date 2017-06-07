@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="treeNodeCell" id="KGk-i7-Jjw" customClass="CateGoryTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZOm-Et-JiC">
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RWo-72-ZwI">
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="EdK-Qr-6KV"/>
+                                    <constraint firstAttribute="width" constant="20" id="co4-dG-QRJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" size="button"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.1960784314" green="0.30980392159999998" blue="0.52156862749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="TMY" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7uM-ZG-D62">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                <color key="textColor" red="0.90980392160000001" green="0.92156862750000001" blue="0.95294117649999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2T-Lf-g8V">
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="expand:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="owx-si-Occ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.17254901959999999" green="0.20392156859999999" blue="0.29411764709999999" alpha="0.097281678080000003" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="7uM-ZG-D62" secondAttribute="trailing" constant="2" id="1Pi-zX-W8l"/>
+                            <constraint firstItem="7uM-ZG-D62" firstAttribute="top" secondItem="ZOm-Et-JiC" secondAttribute="top" constant="2" id="2cz-PW-Sto"/>
+                            <constraint firstAttribute="bottom" secondItem="RWo-72-ZwI" secondAttribute="bottom" constant="11" id="4wP-ea-B5M"/>
+                            <constraint firstItem="P2T-Lf-g8V" firstAttribute="top" secondItem="ZOm-Et-JiC" secondAttribute="top" id="DFA-mG-QU4"/>
+                            <constraint firstItem="RWo-72-ZwI" firstAttribute="leading" secondItem="ZOm-Et-JiC" secondAttribute="leading" constant="8" id="F6C-dv-jad"/>
+                            <constraint firstAttribute="trailing" secondItem="P2T-Lf-g8V" secondAttribute="trailing" id="VBA-qs-mDi"/>
+                            <constraint firstAttribute="bottom" secondItem="7uM-ZG-D62" secondAttribute="bottom" constant="3" id="e8Y-To-tuo"/>
+                            <constraint firstItem="7uM-ZG-D62" firstAttribute="leading" secondItem="RWo-72-ZwI" secondAttribute="trailing" constant="12" id="guk-9t-0jM"/>
+                            <constraint firstItem="RWo-72-ZwI" firstAttribute="top" secondItem="ZOm-Et-JiC" secondAttribute="top" constant="11" id="jju-2t-Wiv"/>
+                            <constraint firstItem="P2T-Lf-g8V" firstAttribute="leading" secondItem="ZOm-Et-JiC" secondAttribute="leading" id="oJ7-8q-9kD"/>
+                            <constraint firstAttribute="bottom" secondItem="P2T-Lf-g8V" secondAttribute="bottom" id="yb7-Bk-1Sa"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="ZOm-Et-JiC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="1" id="G8Q-WE-VhQ"/>
+                    <constraint firstItem="ZOm-Et-JiC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="VRa-HV-q72"/>
+                    <constraint firstAttribute="bottom" secondItem="ZOm-Et-JiC" secondAttribute="bottom" constant="1" id="Ylc-6l-jye"/>
+                    <constraint firstAttribute="trailing" secondItem="ZOm-Et-JiC" secondAttribute="trailing" constant="1" id="kG3-Fx-Q6T"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="cellButton" destination="RWo-72-ZwI" id="kQM-hh-p1d"/>
+                <outlet property="cellLabel" destination="7uM-ZG-D62" id="obq-b6-59f"/>
+                <outlet property="expandBtn" destination="P2T-Lf-g8V" id="ucH-CF-8ak"/>
+            </connections>
+            <point key="canvasLocation" x="151" y="-49"/>
+        </tableViewCell>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

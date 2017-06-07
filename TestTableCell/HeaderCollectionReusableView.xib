@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="headerCell" id="U6b-Vx-4bR" customClass="HeaderCollectionReusableView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WSb-Tf-Kw5">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Constructiuon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xzq-Yz-p47">
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jfe-eC-SvC">
+                            <color key="backgroundColor" red="0.33135524389999998" green="0.37765535709999998" blue="0.51456910369999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="15" id="3vu-Yx-7yW"/>
+                                <constraint firstAttribute="width" constant="1" id="eFD-Xq-NVG"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UHw-zT-dIu">
+                            <color key="backgroundColor" red="0.33135524389999998" green="0.37765535709999998" blue="0.51456910369999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="lcN-2d-tOf"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="UHw-zT-dIu" firstAttribute="leading" secondItem="jfe-eC-SvC" secondAttribute="trailing" id="13y-pv-rQt"/>
+                        <constraint firstItem="jfe-eC-SvC" firstAttribute="centerY" secondItem="xzq-Yz-p47" secondAttribute="centerY" id="AaF-4P-GGN"/>
+                        <constraint firstItem="xzq-Yz-p47" firstAttribute="top" secondItem="WSb-Tf-Kw5" secondAttribute="top" constant="8" id="DzR-MS-mEN"/>
+                        <constraint firstItem="UHw-zT-dIu" firstAttribute="centerY" secondItem="xzq-Yz-p47" secondAttribute="centerY" id="Ss8-QX-Jdn"/>
+                        <constraint firstAttribute="bottom" secondItem="xzq-Yz-p47" secondAttribute="bottom" constant="7" id="WSK-df-2hX"/>
+                        <constraint firstAttribute="trailing" secondItem="UHw-zT-dIu" secondAttribute="trailing" id="X09-KW-pgM"/>
+                        <constraint firstItem="jfe-eC-SvC" firstAttribute="leading" secondItem="xzq-Yz-p47" secondAttribute="trailing" constant="2" id="dFa-2d-mdO"/>
+                        <constraint firstItem="xzq-Yz-p47" firstAttribute="leading" secondItem="WSb-Tf-Kw5" secondAttribute="leading" constant="1" id="dQF-0v-B1V"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="WSb-Tf-Kw5" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="4T2-n8-BR9"/>
+                <constraint firstAttribute="trailing" secondItem="WSb-Tf-Kw5" secondAttribute="trailing" constant="10" id="75x-1A-ibT"/>
+                <constraint firstItem="WSb-Tf-Kw5" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="10" id="fbO-xS-XwV"/>
+                <constraint firstAttribute="bottom" secondItem="WSb-Tf-Kw5" secondAttribute="bottom" id="lFy-rJ-oyQ"/>
+            </constraints>
+            <connections>
+                <outlet property="sectionName_lbl" destination="xzq-Yz-p47" id="Mr4-22-B6J"/>
+            </connections>
+            <point key="canvasLocation" x="-125" y="74"/>
+        </collectionReusableView>
+    </objects>
+</document>
