@@ -5,9 +5,9 @@
 //  Created by Manoyadav on 02/12/16.
 //  Copyright © 2016 com.way2online. All rights reserved.
 //
-
+//
 #import "My_Cart.h"
-
+//
 @interface My_Cart ()
 {
     NSMutableArray *checkSixTonnesArr;
